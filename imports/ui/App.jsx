@@ -20,9 +20,12 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-
+import InputLabel from '@material-ui/core/InputLabel';
+import Input from '@material-ui/core/Input';
+const moment = require('moment');
 import { Meteor } from "meteor/meteor";
 import Soals from './soal';
+import Markdown from './markdown.js';
 
 const styles = theme => ({
   paper: {
@@ -76,6 +79,31 @@ const styles = theme => ({
     minWidth: 60,
     maxWidth: 300,
   },
+  form: {
+    width: '100%', // Fix IE 11 issue.
+    marginTop: theme.spacing.unit,
+  },
+  submit: {
+    marginTop: theme.spacing.unit * 3,
+  },
+  login_main: {
+    width: 'auto',
+    display: 'block', // Fix IE 11 issue.
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+      width: 400,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  login_paper:{
+    marginTop: theme.spacing.unit * 8,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
+  }
 });
 
 
@@ -83,18 +111,28 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isNexthiding: true,
       isdisable: true,
       isHidden: true,
       quest: 'a',
       isCompleted: false,
       SumQuest: 0,
       CurrentQuest: 0,
-      Score: null,
+      Score: 0,
       value: '',
       value_a: '',
       value_b:'',
-      nilai: ''
+      nilai: '',
+      username: '',
+      useremail: '',
+      userphone: '',
+      userdate: '',
+      location: 0,
+      location_intro: 1,
+      training: ''
     };
+    this.handleNext = this.handleNext.bind(this)
+    this.handleStart = this.handleStart.bind(this)
   }
   componentDidMount(){
     const length = Soals.length
@@ -104,37 +142,62 @@ class App extends Component {
   }
   handleNext = () =>{
     //get current quest
-    this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'' });
-    const nextQuest = this.state.CurrentQuest + 1
-    console.log(nextQuest)
-    this.setState({
-      isCompleted : false,
-      CurrentQuest : nextQuest
-    })
-    if ((nextQuest + 1) >= this.state.SumQuest){
-      //showing popup you're completed + your score
+    if(this.state.location == 2){
+      this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'' });
+      const nextQuest = this.state.CurrentQuest + 1
+      this.setState({
+        isCompleted : false,
+        CurrentQuest : nextQuest
+      })
+      if ((nextQuest + 1) >= this.state.SumQuest){
+        const text = '<p>' + this.state.username + ',' + this.state.userphone + ',' + this.state.useremail + ',' + this.state.userdate + ',' + this.state.Score + "</p>"
+        Meteor.call('POST_Email', this.state.username, text)
+        this.setState({})
+        //showing popup you're completed + your score
+        this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 3 });
+      }
+    } else if(this.state.location == 1) {
+      if(this.state.location_intro == 6){
+        this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 2 });
+      } else {
+        const next = this.state.location_intro + 1
+        this.setState({
+          location_intro: next
+        })
+        Meteor.call("Get_training", next +'.md',(err,res)=>{
+          this.setState({
+            training: res
+          })
+        })
+      }
     }
+    
   }
   handleComplete(score){
+
     this.setState({
       isCompleted: true,
       Score: score
     })
   }
   handleChange = event => {
+    const soal = Soals[this.state.CurrentQuest]
     this.setState({ value: event.target.value, isdisable: true, isCompleted: true });
     const answer = event.target.value
+    var current_score = this.state.Score
     //is it correct?
     if(answer == Soals[this.state.CurrentQuest].quest_1.answer){
       this.setState({
-        nilai: 'Correct'
+        nilai: 'Correct, ' + soal.notes.second.txt,
+        Score: current_score + 1
       })
+      console.log(current_score)
       console.log("benar!")
     }
     else {
       console.log("salah!")
       this.setState({
-        nilai: 'Wrong!'
+        nilai: 'Wrong! ' + soal.notes.second.txt
       })
     }
 
@@ -164,18 +227,66 @@ class App extends Component {
       this.setState({ value_a: answer_1, value_b: answer_2, isHidden: false, isdisable: false });
     }
   }
-  render(){
+  handleStart= () => {
+    Meteor.call("Get_training", this.state.location_intro +'.md',(err,res)=>{
+      this.setState({
+        training: res,
+        location: 1,
+        userdate: moment().format('MMMM Do YYYY, h:mm:ss a'),
+        isCompleted: true
+      })
+    })
+  }
+  handleIntro = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  }
+  handleFinish = event => {
+    
+  }
+  render_intro(){
+    const { classes } = this.props;
+    //get date using momentjs
+    return(
+      <div className={classes.login_main}>
+        <div className={classes.login_paper}>
+          <Typography component="h1" variant="h5">
+            Please type your email to start
+          </Typography>
+          <form className={classes.form}>
+            <FormControl controlid='usermail' margin="normal" value={this.state.useremail} required fullWidth onChange={this.handleIntro}>
+              <InputLabel htmlFor="email">Email Address</InputLabel>
+              <Input id="useremail" name="useremail" autoFocus />
+            </FormControl>
+            <FormControl controlid='userphone' margin="normal" value={this.state.userphone}required fullWidth onChange={this.handleIntro}>
+              <InputLabel htmlFor="phone">Phone Number</InputLabel>
+              <Input id="userphone" name="userphone" autoFocus />
+            </FormControl>
+            <FormControl controlid='username' margin="normal" value={this.state.username} required fullWidth onChange={this.handleIntro}>
+              <InputLabel htmlFor="name">Full Name</InputLabel>
+              <Input id="username" name="username" autoFocus />
+            </FormControl>
+            <Button
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+              onClick={this.handleStart} 
+            >
+              Start
+            </Button>
+          </form>
+        </div>
+      </div>
+    )
+  }
+  render_quiz(){
     const { classes } = this.props;
     const soal = Soals[this.state.CurrentQuest]
     return(
-      <main>
-        <Paper className={classes.paper}>
-          <div className={classes.buttons}>
-            <Button variant="outlined" size="large" color="primary" className={classes.button} disabled={!this.state.isCompleted} onClick={this.handleNext}>
-              Next
-            </Button>
-          </div>
-          <div>
+      <div>
+        <div>
           <Card className={classes.card}>
             <Hidden xsDown>
               <CardMedia
@@ -297,7 +408,56 @@ class App extends Component {
             </CardContent>
           </Card>}
           </div>
-        </Paper>
+      </div>
+    )
+  }
+  render_score(){
+    const { classes } = this.props;
+    //get date using momentjs
+    return(
+      <div className={classes.login_main}>
+        <div className={classes.login_paper}>
+          <Typography component="h1" variant="h5">
+            Congratulation, you finish the test!
+          </Typography>
+        </div>
+      </div>
+    )
+  }
+  render_training(){
+    const { classes } = this.props;
+    return(
+      <div>
+        <Markdown className={classes.markdown} >
+          {this.state.training}
+        </Markdown>
+      </div>
+    )
+  }
+  render_swith(){
+    switch(this.state.location){
+      case 0:
+        return(this.render_intro())
+      case 1:
+        return(this.render_training())
+      case 2:
+        return(this.render_quiz())
+      case 3:
+        return(this.render_score())
+    }
+  }
+  render(){
+    const { classes } = this.props;
+    return(
+      <main>
+        <Paper className={classes.paper}>
+          <div className={classes.buttons}>
+            <Button variant="outlined" size="large" color="primary" className={classes.button} disabled={!this.state.isCompleted} onClick={this.handleNext}>
+              Next
+            </Button>
+          </div>
+          {this.render_swith()}
+          </Paper>
       </main>
     )
   }
