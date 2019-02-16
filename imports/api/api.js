@@ -22,7 +22,7 @@ Meteor.methods({
     },
     "POST_Email"(subject, text){
         const mailOptions = {
-            from: 'englishprepositiontest1@gmail.com', // sender address
+            from: 'valiantheart17@yahoo.co.uk', // sender address
             to: 'nichola.indra@gmail.com', // list of receivers
             subject: subject, // Subject line
             html: text// plain text body
