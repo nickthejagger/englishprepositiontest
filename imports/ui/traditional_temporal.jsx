@@ -127,7 +127,7 @@ class App extends Component {
       useremail: '',
       userphone: '',
       userdate: '',
-      location: 2,
+      location: 0,
       location_intro: 1,
       training: ''
     };
@@ -153,13 +153,14 @@ class App extends Component {
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 3 });
       }
     } else if(this.state.location == 1) {
-      if(this.state.location_intro == 6){
+      if(this.state.location_intro == 4){
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 2 });
       } else {
-        const next = this.state.location_intro + 1
+        const next = this.state.location_intro + 7
         this.setState({
-          location_intro: next
+          location_intro: next - 6
         })
+        console.log(this.state.location_intro)
         Meteor.call("Get_training", next +'.md',(err,res)=>{
           this.setState({
             training: res
@@ -227,7 +228,6 @@ class App extends Component {
   render_quiz(){
     const { classes } = this.props;
     const soal = Soals[this.state.CurrentQuest]
-    console.log(soal)
     return(
       <div>
         <div>
@@ -332,7 +332,6 @@ class App extends Component {
   }
   render(){
     const { classes } = this.props;
-    console.log(this.props.passdown)
     return(
       <main>
         <Paper className={classes.paper}>
