@@ -151,8 +151,6 @@ class App extends Component {
           <Typography><Button onClick={this.handle_button_b}>cognitive temporal preposition</Button></Typography>
           <Typography><Button onClick={this.handle_button_c}>traditional temporal preposition</Button></Typography>
           <Typography><Button onClick={this.handle_button_d}>traditional temporal spatial</Button></Typography>
-          <Typography><a href="https://goo.gl/forms/zJzk8OMzeQboV5fJ3">test (A)</a></Typography>
-          <Typography><a href="https://goo.gl/forms/ce3z7uJPdRW1kb4s1">test (B)</a></Typography>
         </Paper>
       </main>
     )

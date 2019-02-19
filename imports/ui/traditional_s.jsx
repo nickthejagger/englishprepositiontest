@@ -26,6 +26,7 @@ const moment = require('moment');
 import { Meteor } from "meteor/meteor";
 import Soals from './traditional_spatial';
 import Markdown from './markdown.js';
+const ReactMarkdown = require('react-markdown')
 
 const styles = theme => ({
   paper: {
@@ -156,12 +157,12 @@ class App extends Component {
       if(this.state.location_intro == 4){
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 2 });
       } else {
-        const next = this.state.location_intro + 7
+        const next = this.state.location_intro + 1
         this.setState({
-          location_intro: next - 6
+          location_intro: next
         })
         console.log(this.state.location_intro)
-        Meteor.call("Get_training", next +'.md',(err,res)=>{
+        Meteor.call("Get_training","TS", next +'.md',(err,res)=>{
           this.setState({
             training: res
           })
@@ -175,7 +176,7 @@ class App extends Component {
     this.setState({ value: event.target.value, isdisable: true,isHidden: false, isCompleted: true });
   };
   handleStart= () => {
-    Meteor.call("Get_training", this.state.location_intro +'.md',(err,res)=>{
+    Meteor.call("Get_training","TS", this.state.location_intro +'.md',(err,res)=>{
       this.setState({
         training: res,
         location: 1,

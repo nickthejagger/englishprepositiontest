@@ -129,7 +129,7 @@ class App extends Component {
       userdate: '',
       location: 0,
       location_intro: 1,
-      training: ''
+      training: 'abc'
     };
     this.handleNext = this.handleNext.bind(this)
     this.handleStart = this.handleStart.bind(this)
@@ -153,15 +153,15 @@ class App extends Component {
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 3 });
       }
     } else if(this.state.location == 1) {
-      if(this.state.location_intro == 4){
+      if(this.state.location_intro == 2){
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 2 });
       } else {
-        const next = this.state.location_intro + 7
+        const next = this.state.location_intro + 1
         this.setState({
-          location_intro: next - 6
+          location_intro: next
         })
-        console.log(this.state.location_intro)
-        Meteor.call("Get_training", next +'.md',(err,res)=>{
+        console.log(this.state.location_intro + '.md')
+        Meteor.call("Get_training","TT", next +'.md',(err,res)=>{
           this.setState({
             training: res
           })
@@ -175,7 +175,8 @@ class App extends Component {
     this.setState({ value: event.target.value, isdisable: true,isHidden: false, isCompleted: true });
   };
   handleStart= () => {
-    Meteor.call("Get_training", this.state.location_intro +'.md',(err,res)=>{
+    console.log(this.state.location_intro+ '.md')
+    Meteor.call("Get_training","TT", this.state.location_intro +'.md',(err,res)=>{
       this.setState({
         training: res,
         location: 1,

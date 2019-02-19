@@ -40,7 +40,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549865722424/home/temporal-preposition/2/image016.gif",
-    "intruction": {
+    "instruction": {
       "exp_a": "ON is used to show a day or date",
       "a_1": "My parents’ wedding anniversary is on April 26",
       "a_2": "The wedding mass was held on Sunday morning",
@@ -60,7 +60,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549865964847/home/temporal-preposition/2/image023.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "ON is used to show a day or date",
       "a_1": "My parents’ wedding anniversary is on April 26",
       "a_2": "The wedding mass was held on Sunday morning",
@@ -80,7 +80,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866181235/home/temporal-preposition/2/image027.gif",
-    "intruction": {
+    "instruction": {
       "exp_a": "ON is used to show a day or date",
       "a_1": "My parents’ wedding anniversary is on April 26",
       "a_2": "The wedding mass was held on Sunday morning",
@@ -100,7 +100,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866320550/home/temporal-preposition/2/image022.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "ON is used to show a day or date",
       "a_1": "My parents’ wedding anniversary is on April 26",
       "a_2": "The wedding mass was held on Sunday morning",
@@ -120,7 +120,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866399417/home/temporal-preposition/2/image036.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -140,7 +140,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866551618/home/temporal-preposition/2/image040.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "ON is used to show a day or date",
       "a_1": "My parents’ wedding anniversary is on April 26",
       "a_2": "The wedding mass was held on Sunday morning",
@@ -160,7 +160,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866629723/home/temporal-preposition/2/image045.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -180,7 +180,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866780915/home/temporal-preposition/2/Train%20on%20time.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -200,7 +200,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866894114/home/temporal-preposition/2/Arrival.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -220,7 +220,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867132447/home/temporal-preposition/2/december-2018-calendar.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "ON is used to show a day or date",
       "a_1": "My parents’ wedding anniversary is on April 26",
       "a_2": "The wedding mass was held on Sunday morning",
@@ -240,7 +240,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867249638/home/temporal-preposition/2/image066.gif",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -260,7 +260,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867312658/home/temporal-preposition/2/image073.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -280,7 +280,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867384203/home/temporal-preposition/2/image075.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -300,7 +300,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867863527/home/temporal-preposition/2/image080.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -320,7 +320,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867996937/home/temporal-preposition/2/image085.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -340,7 +340,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549868081075/home/temporal-preposition/2/image092.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "ON is used to show a day or date",
       "a_1": "My parents’ wedding anniversary is on April 26",
       "a_2": "The wedding mass was held on Sunday morning",
@@ -360,7 +360,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549868133879/home/temporal-preposition/2/image096.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -380,7 +380,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549868235392/home/temporal-preposition/2/image098.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",
@@ -400,7 +400,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549868285273/home/temporal-preposition/2/image102.png",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used during the period of time",
       "a_1": "His father passed away in January",
       "a_2": "The war happened in 18th century",

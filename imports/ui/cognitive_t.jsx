@@ -157,14 +157,14 @@ class App extends Component {
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 3 });
       }
     } else if(this.state.location == 1) {
-      if(this.state.location_intro == 6){
+      if(this.state.location_intro == 2){
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 2 });
       } else {
         const next = this.state.location_intro + 1
         this.setState({
           location_intro: next
         })
-        Meteor.call("Get_training", next +'.md',(err,res)=>{
+        Meteor.call("Get_training","CT", next +'.md',(err,res)=>{
           this.setState({
             training: res
           })
@@ -228,7 +228,7 @@ class App extends Component {
     }
   }
   handleStart= () => {
-    Meteor.call("Get_training", this.state.location_intro +'.md',(err,res)=>{
+    Meteor.call("Get_training","CT", this.state.location_intro +'.md',(err,res)=>{
       this.setState({
         training: res,
         location: 1,

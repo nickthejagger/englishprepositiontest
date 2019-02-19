@@ -17,8 +17,18 @@ Meteor.methods({
             return("res.data")
         })
     },
-    "Get_training"(md){
-        return Assets.getText(md)
+    "Get_training"(location,md){
+        console.log(md)
+        if(location == "CS"){
+            return Assets.getText("Intro/CS/" + md)
+        }else if(location == "CT"){
+            return Assets.getText("Intro/CT/" + md)
+        }else if (location == "TS"){
+            return Assets.getText("Intro/TS/" + md)
+        } else if(location == "TT")
+        {
+            return Assets.getText("Intro/TT/" +md)
+        }
     },
     "POST_Email"(subject, text){
         const mailOptions = {
