@@ -40,7 +40,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1547993365652/home/cognitive-linguistic-condition-treatment/6/architecture-book-bindings-bookcase-1370298.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "IN is used within the shape of something:",
       "a_1": "My daughter was lying in bed.",
       "a_2": "He likes to sit in the armchair.",
@@ -60,7 +60,7 @@ export default [{
     }
   },{
     "image": "https://p4t6u7k5.stackpathcdn.com/wp-content/uploads/2017/01/howmanystamps_crop.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
@@ -80,7 +80,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/942295/pexels-photo-942295.jpeg?cs=srgb&dl=animal-aquarium-betta-fish-942295.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
@@ -100,7 +100,7 @@ export default [{
     }
   },{
     "image": "https://www.bucketlist127.com/uploads/images/375fddc1354a22d46555a762d92a5420.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -120,7 +120,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/1549039/pexels-photo-1549039.jpeg?cs=srgb&dl=beautiful-computer-female-1549039.jpg&fm=jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -140,7 +140,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/1808389/pexels-photo-1808389.jpeg?cs=srgb&dl=brick-wall-bricks-daylight-1808389.jpg&fm=jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -160,7 +160,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/132673/pexels-photo-132673.jpeg?cs=srgb&dl=adult-animal-daylight-132673.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -180,7 +180,7 @@ export default [{
     }
   },{
     "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1548213753019/home/cognitive-linguistic-condition-treatment/14/book-book-pages-copyright-762687.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -200,7 +200,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?cs=srgb&dl=action-athlete-blue-863988.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
@@ -220,7 +220,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/371109/pexels-photo-371109.jpeg?cs=srgb&dl=adult-attractive-beautiful-371109.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -240,7 +240,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/1458669/pexels-photo-1458669.jpeg?cs=srgb&dl=bed-bedroom-book-1458669.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -260,7 +260,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?cs=srgb&dl=affair-anniversary-asad-1024960.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -280,7 +280,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/264400/pexels-photo-264400.jpeg?cs=srgb&dl=action-beach-enjoyment-264400.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
@@ -300,7 +300,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/68761/pexels-photo-68761.jpeg?cs=srgb&dl=book-business-business-woman-68761.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
@@ -320,7 +320,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/859264/pexels-photo-859264.jpeg?cs=srgb&dl=businessman-call-calling-859264.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
@@ -340,7 +340,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/235294/pexels-photo-235294.jpeg?cs=srgb&dl=apples-bananas-basket-235294.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a":"ON is used in or into a position covering, touching or forming part of a surface",
       "a_1": "There are so many pictures on the wall.",
       "a_2": "There is a birthmark on your hand.", 
@@ -360,7 +360,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/1478026/pexels-photo-1478026.jpeg?cs=srgb&dl=chairs-fashionable-furnitures-1478026.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
@@ -380,7 +380,7 @@ export default [{
     }
   },{
     "image": "https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?cs=srgb&dl=applause-audience-band-196652.jpg",
-    "intruction": {
+    "instruction": {
       "exp_a": "AT is used to say where something/somebody is or where something happens",
       "a_1": "I’ll be at home all morning",
       "a_2": "I met her at the hospital",
