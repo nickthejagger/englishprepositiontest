@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Cognitive_s from './cognitive_s'
 import Cognitive_t from './cognitive_t';
 import Traditional_t from './traditional_temporal'
+import Traditional_s from './traditional_temporal'
 const styles = theme => ({
   paper: {
     marginBottom: theme.spacing.unit * 4,
@@ -98,6 +99,7 @@ class App extends Component {
     this.handle_button_a = this.handle_button_a.bind(this)
     this.handle_button_b = this.handle_button_b.bind(this)
     this.handle_button_c = this.handle_button_c.bind(this)
+    this.handle_button_d = this.handle_button_d.bind(this)
   }
   handle_button_a(){
     console.log(1)
@@ -117,6 +119,13 @@ class App extends Component {
       location: 3
     })
   }
+
+  handle_button_d(){
+    console.log(1)
+    this.setState({
+      location: 4
+    })
+  }
   render_switch(){
     switch(this.state.location){
       case 0:
@@ -127,6 +136,8 @@ class App extends Component {
         return(<Cognitive_t/>)
       case 3:
         return(<Traditional_t/>)
+      case 4:
+        return(<Traditional_s/>)
     }
   }
   render_home(){
@@ -139,6 +150,7 @@ class App extends Component {
           <Typography><Button onClick={this.handle_button_a}>cognitive spatial preposition</Button></Typography>
           <Typography><Button onClick={this.handle_button_b}>cognitive temporal preposition</Button></Typography>
           <Typography><Button onClick={this.handle_button_c}>traditional temporal preposition</Button></Typography>
+          <Typography><Button onClick={this.handle_button_d}>traditional temporal spatial</Button></Typography>
           <Typography><a href="https://goo.gl/forms/zJzk8OMzeQboV5fJ3">test (A)</a></Typography>
           <Typography><a href="https://goo.gl/forms/ce3z7uJPdRW1kb4s1">test (B)</a></Typography>
         </Paper>
