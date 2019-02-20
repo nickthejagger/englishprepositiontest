@@ -147,9 +147,8 @@ class App extends Component {
         <Paper className={classes.paper}>
           Home 
           <Typography><a href="https://sites.google.com/site/englishprepositiontest/home/pre-training">Pre-training</a></Typography>
-          <Typography><Button onClick={this.handle_button_a}>cognitive spatial preposition</Button></Typography>
-          <Typography><Button onClick={this.handle_button_b}>cognitive temporal preposition</Button></Typography>
-          
+          <Typography><Button onClick={this.handle_button_c}>traditional temporal preposition</Button></Typography>
+          <Typography><Button onClick={this.handle_button_d}>traditional temporal spatial</Button></Typography>
         </Paper>
       </main>
     )
