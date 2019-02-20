@@ -16,7 +16,7 @@ export default [
                 "A": "Books",
                 "B": "Box"
             },
-            "answer": "B"
+            "answer": "A"
         },
         "notes": {
             "first": {
@@ -82,7 +82,7 @@ export default [
                 "A": "the books",
                 "B": "the shelf"
             },
-            "answer": "B"
+            "answer": "A"
         },
         "notes": {
             "first": {
@@ -148,7 +148,7 @@ export default [
                 "A": "the envelope",
                 "B": "the stamp"
             },
-            "answer": "A"
+            "answer": "B"
         },
         "notes": {
             "first": {
@@ -247,7 +247,7 @@ export default [
                 "A": "the desk",
                 "B": "she"
             },
-            "answer": "A"
+            "answer": "B"
         },
         "notes": {
             "first": {
@@ -306,7 +306,7 @@ export default [
         "quest_1": {
             "A": "He likes riding in his horse.",
             "B": "He likes riding on his horse.",
-            "answer": "A"
+            "answer": "B"
         },
         "quest_2": {
             "dropdown": {

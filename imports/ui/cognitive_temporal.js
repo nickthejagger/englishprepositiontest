@@ -111,7 +111,7 @@ export default [{
     },
     "quest_2": {
         "dropdown": {
-            "A": "going out",
+            "A": "the event 'going out'",
             "B": "Saturday evenings"
         },
         "answer": "A"
@@ -210,7 +210,7 @@ export default [{
     },
     "quest_2": {
         "dropdown": {
-            "A": "The train leave",
+            "A": "The train leaves",
             "B": "5 minutes"
         },
         "answer": "A"
@@ -243,7 +243,7 @@ export default [{
     },
     "quest_2": {
         "dropdown": {
-            "A": "Tom usually sees his parents",
+            "A": "Tom sees his parents",
             "B": "Christmas"
         },
         "answer": "A"
@@ -536,7 +536,7 @@ export default [{
     "quest_1": {
         "A": "The park is beautiful in spring.",
         "B": "The park is beautiful on spring.",
-        "answer": "B"
+        "answer": "A"
     },
     "quest_2": {
         "dropdown": {
@@ -668,7 +668,7 @@ export default [{
     "quest_1": {
         "A": "He’s busy in the moment.",
         "B": "He’s busy at the moment.",
-        "answer": "A"
+        "answer": "B"
     },
     "quest_2": {
         "dropdown": {
