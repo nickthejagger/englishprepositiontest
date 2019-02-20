@@ -313,9 +313,7 @@ class App extends Component {
     const { classes } = this.props;
     return(
       <div>
-        <Markdown className={classes.markdown} >
-          {this.state.training}
-        </Markdown>
+        <ReactMarkdown source={this.state.training}></ReactMarkdown>
       </div>
     )
   }

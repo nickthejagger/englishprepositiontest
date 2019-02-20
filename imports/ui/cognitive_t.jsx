@@ -26,6 +26,7 @@ const moment = require('moment');
 import { Meteor } from "meteor/meteor";
 import Soals from './cognitive_temporal';
 import Markdown from './markdown.js';
+import ReactMarkdown from 'react-markdown'
 
 const styles = theme => ({
   paper: {

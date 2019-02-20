@@ -26,7 +26,7 @@ const moment = require('moment');
 import { Meteor } from "meteor/meteor";
 import Soals from './traditional_t';
 import Markdown from './markdown.js';
-
+import ReactMarkdown from 'react-markdown'
 const styles = theme => ({
   paper: {
     marginBottom: theme.spacing.unit * 4,
@@ -313,9 +313,7 @@ class App extends Component {
     const { classes } = this.props;
     return(
       <div>
-        <Markdown className={classes.markdown} >
-          {this.state.training}
-        </Markdown>
+        <ReactMarkdown source={this.state.training}></ReactMarkdown>
       </div>
     )
   }
