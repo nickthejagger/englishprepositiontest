@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Cognitive_s from './cognitive_s'
 import Cognitive_t from './cognitive_t';
 import Traditional_t from './traditional_temporal'
-import Traditional_s from './traditional_temporal'
+import Traditional_s from './traditional_s'
 const styles = theme => ({
   paper: {
     marginBottom: theme.spacing.unit * 4,

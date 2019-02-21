@@ -60,12 +60,12 @@ const styles = theme => ({
     flex: 1,
   },
   cardMedia: {
-    width: 500,
-    height: 500
+    width: 320,
+    height: 320
   },
   Media:{
-    width: 300,
-    height: 300
+    width: 320,
+    height: 320
   },
   formControl: {
     margin: theme.spacing.unit * 3,
