@@ -284,6 +284,7 @@ class App extends Component {
   render_quiz(){
     const { classes } = this.props;
     const soal = Soals[this.state.CurrentQuest]
+    console.log(soal)
     return(
       <div>
         <div>
@@ -359,8 +360,8 @@ class App extends Component {
                       <MenuItem value="">
                         <em>None</em>
                       </MenuItem>
-                      <MenuItem value={"A"}>Books</MenuItem>
-                      <MenuItem value={"B"}>Box</MenuItem>
+                      <MenuItem value={"A"}>{soal.quest_2.dropdown.A}</MenuItem>
+                      <MenuItem value={"B"}>{soal.quest_2.dropdown.B}</MenuItem>
                     </Select>
                   </FormControl>
                   </Typography>

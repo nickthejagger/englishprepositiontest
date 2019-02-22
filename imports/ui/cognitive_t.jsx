@@ -360,8 +360,8 @@ class App extends Component {
                       <MenuItem value="">
                         <em>None</em>
                       </MenuItem>
-                      <MenuItem value={"A"}>Books</MenuItem>
-                      <MenuItem value={"B"}>Box</MenuItem>
+                      <MenuItem value={"A"}>{soal.quest_2.dropdown.A}</MenuItem>
+                      <MenuItem value={"B"}>{soal.quest_2.dropdown.B}</MenuItem>
                     </Select>
                   </FormControl>
                   </Typography>
