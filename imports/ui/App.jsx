@@ -6,8 +6,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Cognitive_s from './cognitive_s'
-import Cognitive_t from './cognitive_t';
+import Pretest from './pretes'
+
 import Traditional_t from './traditional_temporal'
 import Traditional_s from './traditional_s'
 const styles = theme => ({
@@ -131,9 +131,7 @@ class App extends Component {
       case 0:
         return(this.render_home())
       case 1:
-        return(<Cognitive_s/>)
-      case 2:
-        return(<Cognitive_t/>)
+        return(<Pretest/>)
       case 3:
         return(<Traditional_t/>)
       case 4:
@@ -146,7 +144,7 @@ class App extends Component {
       <main>
         <Paper className={classes.paper}>
           Home 
-          <Typography><a href="https://sites.google.com/site/englishprepositiontest/home/pre-training">Pre-training</a></Typography>
+          <Typography><Button onClick={this.handle_button_a}>Pretest</Button></Typography>
           <Typography><Button onClick={this.handle_button_c}>traditional temporal preposition</Button></Typography>
           <Typography><Button onClick={this.handle_button_d}>traditional temporal spatial</Button></Typography>
         </Paper>
