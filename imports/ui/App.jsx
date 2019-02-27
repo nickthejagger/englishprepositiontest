@@ -10,6 +10,7 @@ import Cognitive_s from './cognitive_s'
 import Cognitive_t from './cognitive_t';
 import Traditional_t from './traditional_temporal'
 import Traditional_s from './traditional_temporal'
+import Pretest from './Pretest'
 const styles = theme => ({
   paper: {
     marginBottom: theme.spacing.unit * 4,
@@ -135,9 +136,7 @@ class App extends Component {
       case 2:
         return(<Cognitive_t/>)
       case 3:
-        return(<Traditional_t/>)
-      case 4:
-        return(<Traditional_s/>)
+        return(<Pretest/>)
     }
   }
   render_home(){
@@ -149,7 +148,7 @@ class App extends Component {
           <Typography><a href="https://sites.google.com/site/englishprepositiontest/home/pre-training">Pre-training</a></Typography>
           <Typography><Button onClick={this.handle_button_a}>cognitive spatial preposition</Button></Typography>
           <Typography><Button onClick={this.handle_button_b}>cognitive temporal preposition</Button></Typography>
-          
+          <Typography><Button onClick={this.handle_button_c}>Pretest</Button></Typography>
         </Paper>
       </main>
     )

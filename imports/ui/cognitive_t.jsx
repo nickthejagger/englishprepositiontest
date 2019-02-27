@@ -61,12 +61,10 @@ const styles = theme => ({
     flex: 1,
   },
   cardMedia: {
-    width: 500,
-    height: 500
+    width: 300
   },
   Media:{
     width: 300,
-    height: 300
   },
   formControl: {
     margin: theme.spacing.unit * 3,
@@ -150,7 +148,7 @@ class App extends Component {
         isCompleted : false,
         CurrentQuest : nextQuest
       })
-      if ((nextQuest + 1) >= this.state.SumQuest){
+      if ((nextQuest + 1) > this.state.SumQuest){
         const text = '<p>' + this.state.username + ',' + this.state.userphone + ',' + this.state.useremail + ',' + this.state.userdate + ',' + this.state.Score + "</p>"
         Meteor.call('POST_Email', this.state.username, text)
         this.setState({})
@@ -429,9 +427,7 @@ class App extends Component {
     const { classes } = this.props;
     return(
       <div>
-        <Markdown className={classes.markdown} >
-          {this.state.training}
-        </Markdown>
+        <ReactMarkdown source={this.state.training}></ReactMarkdown>
       </div>
     )
   }
