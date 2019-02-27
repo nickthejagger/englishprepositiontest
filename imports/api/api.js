@@ -32,8 +32,8 @@ Meteor.methods({
     },
     "POST_Email"(subject, text){
         const mailOptions = {
-            from: 'valiantheart17@yahoo.co.uk', // sender address
-            to: 'nichola.indra@gmail.com', // list of receivers
+            from: 'englishprepositiontest1@gmail.com', // sender address
+            to: 'valiantheart17@yahoo.co.uk', // list of receivers
             subject: subject, // Subject line
             html: text// plain text body
         };

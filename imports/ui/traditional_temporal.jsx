@@ -149,7 +149,7 @@ class App extends Component {
         isCompleted : false,
         CurrentQuest : nextQuest
       })
-      if ((nextQuest + 1) >= this.state.SumQuest){
+      if ((nextQuest + 1) > this.state.SumQuest){
         this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: true, value: '', nilai:'', isCompleted: false, location: 3 });
       }
     } else if(this.state.location == 1) {
