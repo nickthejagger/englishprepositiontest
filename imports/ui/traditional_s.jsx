@@ -62,12 +62,11 @@ const styles = theme => ({
   },
   cardMedia: {
     width: 320,
-    overflow: 'hidden',
+    "background-size": "contain"
  
   },
   Media:{
     width: 300,
-    overflow: 'hidden',
 
   },
   formControl: {
