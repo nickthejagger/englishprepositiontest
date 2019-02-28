@@ -62,11 +62,13 @@ const styles = theme => ({
   },
   cardMedia: {
     width: 320,
-    height: 320
+    overflow: 'hidden',
+ 
   },
   Media:{
     width: 300,
-    height: 300
+    overflow: 'hidden',
+
   },
   formControl: {
     margin: theme.spacing.unit * 3,
