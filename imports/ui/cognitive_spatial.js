@@ -220,10 +220,10 @@ export default [
             "first": {
                 "txt": "ON and IN describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "IN: to be contained by something"
+                    "explanation": "ON: to be in contact and supported by something"
                 },
                 {
-                    "explanation": "ON: to be in contact and supported by something"
+                    "explanation": "IN: to be contained by something"
                 }]
             },
             "second": {
@@ -286,10 +286,10 @@ export default [
             "first": {
                 "txt": "AT and ON describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "ON: to be in contact and supported by something"
+                    "explanation": "AT: facing and to be close to something"
                 },
                 {
-                    "explanation": "AT: facing and to be close to something"
+                    "explanation": "ON: to be in contact and supported by something"
                 }]
             },
             "second": {
@@ -319,10 +319,10 @@ export default [
             "first": {
                 "txt": "IN and ON describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "ON: to be in contact and supported by something"
+                    "explanation": "IN: to be contained by something"
                 },
                 {
-                    "explanation": "IN: to be contained by something"
+                    "explanation": "ON: to be in contact and supported by something"
                 }]
             },
             "second": {
@@ -352,10 +352,10 @@ export default [
             "first": {
                 "txt": "IN and ON describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "ON: to be in contact and supported by something"
+                    "explanation": "IN: to be contained by something"
                 },
                 {
-                    "explanation": "IN: to be contained by something"
+                    "explanation": "ON: to be in contact and supported by something"
                 }]
             },
             "second": {
@@ -385,10 +385,10 @@ export default [
             "first": {
                 "txt": "IN and AT describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "IN: to be contained by something "
+                    "explanation": "AT: facing and to be close to something"
                 },
                 {
-                    "explanation": "AT: facing and to be close to something"
+                    "explanation": "IN: to be contained by something"
                 }]
             },
             "second": {
@@ -438,7 +438,7 @@ export default [
         "quest_1": {
             "A": "She usually reads her book in the bed.",
             "B": "She usually reads her book on the bed.",
-            "answer": "A"
+            "answer": "B"
         },
         "quest_2": {
             "dropdown": {
@@ -451,7 +451,7 @@ export default [
             "first": {
                 "txt": "IN and ON describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "IN: to be contained by something "
+                    "explanation": "IN: to be contained by something"
                 },
                 {
                     "explanation": "ON: to be in contact and supported by something"
@@ -484,10 +484,10 @@ export default [
             "first": {
                 "txt": "ON and AT describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "ON: to be in contact and supported by something"
+                    "explanation": "IN: to be contained by something"
                 },
                 {
-                    "explanation": "AT: facing and to be close to something"
+                    "explanation": "ON: to be in contact and supported by something"
                 }]
             },
             "second": {
@@ -517,10 +517,10 @@ export default [
             "first": {
                 "txt": "IN and AT describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "IN: to be contained by something"
+                    "explanation": "AT: to share the same location with something"
                 },
                 {
-                    "explanation": "AT: to share the same location with something"
+                    "explanation": "IN: to be contained by something"
                 }]
             },
             "second": {
@@ -570,7 +570,7 @@ export default [
         "quest_1": {
             "A": "Dad is still in the office.",
             "B": "Dad is still at the office.",
-            "answer": "A"
+            "answer": "B"
         },
         "quest_2": {
             "dropdown": {
@@ -616,10 +616,10 @@ export default [
             "first": {
                 "txt": "IN and ON describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "IN: to be contained by something"
+                    "explanation": "ON: to be in contact and supported by something"
                 },
                 {
-                    "explanation": "ON: to be in contact and supported by something"
+                    "explanation": "IN: to be contained by something"
                 }]
             },
             "second": {
@@ -649,10 +649,10 @@ export default [
             "first": {
                 "txt": "IN and AT describe different relationships between the trajectory and the landmark. Learn their difference from the following two schematic diagrams.",
                 "img_explanation": [{
-                    "explanation": "IN: to be contained by something"
+                    "explanation": "AT: to share the same location with something"
                 },
                 {
-                    "explanation": "AT: to share the same location with something"
+                    "explanation": "IN: to be contained by something"
                 }]
             },
             "second": {
