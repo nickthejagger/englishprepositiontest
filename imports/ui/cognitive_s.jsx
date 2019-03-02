@@ -66,6 +66,7 @@ const styles = theme => ({
   },
   Media:{
     width: 300,
+    height:300,
     "background-size": "contain"
   },
   formControl: {
