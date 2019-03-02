@@ -1,5 +1,4 @@
-
-  import React, { Component } from 'react';
+import React, { Component } from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -151,7 +150,7 @@ class App extends Component {
       })
       if ((nextQuest + 1) > this.state.SumQuest){
         
-        alert("Pretest Is Done!")
+        alert("Pre-training Is Done!")
       }
     }
   handleChange = event => {
