@@ -116,7 +116,7 @@ class App extends Component {
       isdisable: false,
       isHidden: true,
       quest: 'a',
-      isCompleted: false,
+      isCompleted: true,
       SumQuest: 0,
       CurrentQuest: 0,
       Score: 0,
@@ -130,7 +130,7 @@ class App extends Component {
       userdate: '',
       location: 0,
       location_intro: 1,
-      training: ''
+      training: '# Pre-training\n\nGeneral instruction\n\n1. Before you learn more about prepositions in this training, we will see how much you know about other prepositions.\n\n2. There are only 5 sentences with accompanying pictures in this pre-training. You will read the 5 sentences and decide if each sentence describes the picture correctly.'
     };
   }
   componentDidMount(){
@@ -142,6 +142,10 @@ class App extends Component {
 
   handleNext = () =>{
     //get current quest
+    if(this.state.location == 0){
+      this.setState({isCompleted : false,location: 1, value_a: '', value_b: '', isHidden: true, isdisable: false, value: '', nilai:'' })
+    }
+    else{
       this.setState({ value_a: '', value_b: '', isHidden: true, isdisable: false, value: '', nilai:'' });
       const nextQuest = this.state.CurrentQuest + 1
       this.setState({
@@ -153,14 +157,15 @@ class App extends Component {
         alert("Pre-training Is Done!")
       }
     }
+    }
   handleChange = event => {
     const soal = Soals[this.state.CurrentQuest]
     var nilai = ''
     if(soal.choice.answer == event.target.value){
-        nilai = "You're correct"
+        nilai = "You're Correct"
     }
     if(soal.choice.answer != event.target.value){
-        nilai = "Youre Wrong"
+        nilai = "You're Wrong"
     }
     this.setState({ value: event.target.value,nilai: nilai, isdisable: true,isHidden: false, isCompleted: true });
   };
@@ -212,6 +217,22 @@ class App extends Component {
       </div>
     )
   }
+  render_training(){
+    const { classes } = this.props;
+    return(
+      <div>
+        <ReactMarkdown source={this.state.training}></ReactMarkdown>
+      </div>
+    )
+  }
+  render_swith(){
+    switch(this.state.location){
+      case 0:
+        return(this.render_training())
+      case 1:
+        return(this.render_quiz())
+    }
+  }
   render(){
     const { classes } = this.props;
     return(
@@ -222,7 +243,7 @@ class App extends Component {
               Next
             </Button>
           </div>
-          {this.render_quiz()}
+          {this.render_swith()}
           </Paper>
       </main>
     )
