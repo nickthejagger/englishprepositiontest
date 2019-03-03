@@ -27,6 +27,8 @@ import { Meteor } from "meteor/meteor";
 import Soals from './traditional_t';
 import Markdown from './markdown.js';
 import ReactMarkdown from 'react-markdown'
+const kunciJawab = [ 'A', 'B', 'B', 'A', 'B', 'A', 'B', 'A', 'A', 'B', 'A', 'B', 'B', 'A', 'A', 'B', 'A', 'A', 'B', 'A', 'B']
+
 const styles = theme => ({
   paper: {
     marginBottom: theme.spacing.unit * 4,
@@ -172,7 +174,14 @@ class App extends Component {
   }
   handleChange = event => {
     const soal = Soals[this.state.CurrentQuest]
-    this.setState({ value: event.target.value, isdisable: true,isHidden: false, isCompleted: true });
+    var jawab = ""
+    console.log(kunciJawab[this.state.CurrentQuest])
+    if(event.target.value == kunciJawab[this.state.CurrentQuest]){
+      jawab = "Correct!"
+    } else {
+      jawab = 'Wrong!'
+    }
+    this.setState({ nilai: jawab, value: event.target.value, isdisable: true,isHidden: false, isCompleted: true });
   };
   handleStart= () => {
     console.log(this.state.location_intro+ '.md')
@@ -267,6 +276,9 @@ class App extends Component {
                     </RadioGroup>
                   </FormControl>
                   {this.state.isHidden ? <div></div> : <div className={classes.cardDetails}>
+                    <Typography variant="subtitle1">
+                        {this.state.nilai}
+                    </Typography>
                     <Typography variant="subtitle1">
                         {soal.option_1.desc}
                     </Typography>
