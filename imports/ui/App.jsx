@@ -145,8 +145,8 @@ class App extends Component {
         <Paper className={classes.paper}>
           Home 
           <Typography><Button onClick={this.handle_button_a}>Pre-training</Button></Typography>
-          <Typography><Button onClick={this.handle_button_c}>temporal</Button></Typography>
           <Typography><Button onClick={this.handle_button_d}>spatial</Button></Typography>
+          <Typography><Button onClick={this.handle_button_c}>temporal</Button></Typography>
         </Paper>
       </main>
     )
