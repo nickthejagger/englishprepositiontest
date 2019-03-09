@@ -181,14 +181,14 @@ export default[{
 },{
   "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866780915/home/temporal-preposition/2/Train%20on%20time.jpg",
   "instruction": {
-    "exp_a": "IN is used during the period of time",
-    "a_1": "His father passed away in January",
-    "a_2": "The war happened in 18th century",
-    "a_3": "People usually get married in the fall",
-    "exp_b": "ON is used to show a day or date",
-    "b_1": "My parents’ wedding anniversary is on April 26",
-    "b_2": "The wedding mass was held on Sunday morning",
-    "b_3": "My mother will give the present on my birthday"
+    "exp_a": "IN is used after a particular length of time.",
+    "a_1": "It will be ready in a week’s time",
+    "a_2": "She learnt to drive in three months",
+    "a_3": "He will return in a few minutes",
+    "exp_b": "ON is used to describe an activity or a state",
+    "b_1": "The book is currently on loan",
+    "b_2": "He is now on his holiday",
+    "b_3": "My father is on business"
   },
   "option_1": {
     "string": "The train arrived in time.",
@@ -201,14 +201,14 @@ export default[{
 },{
   "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549866894114/home/temporal-preposition/2/Arrival.jpg",
   "instruction": {
-    "exp_a": "IN is used during the period of time",
-    "a_1": "His father passed away in January",
-    "a_2": "The war happened in 18th century",
-    "a_3": "People usually get married in the fall",
-    "exp_b": "ON is used to show a day or date",
-    "b_1": "My parents’ wedding anniversary is on April 26",
-    "b_2": "The wedding mass was held on Sunday morning",
-    "b_3": "My mother will give the present on my birthday"
+    "exp_a": "IN is used in negative sentences for a particular period of time",
+    "a_1": "It’s the first letter I’ve had in ten days",
+    "a_2": "I haven’t seen him in years",
+    "a_3": "I came after the show began, but I was in time to enjoy the show",
+    "exp_b": "ON is used to describe an activity or a state",
+    "b_1": "The book is currently on loan",
+    "b_2": "He is now on his holiday",
+    "b_3": "My father is on business"
   },
   "option_1": {
     "string": "I was still in time to hear the lecture.",
@@ -241,10 +241,10 @@ export default[{
 },{
   "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867249638/home/temporal-preposition/2/image066.gif",
   "instruction": {
-    "exp_a": "IN is used during the period of time",
-    "a_1": "His father passed away in January",
-    "a_2": "The war happened in 18th century",
-    "a_3": "People usually get married in the fall",
+    "exp_a": "IN is used in negative sentences for a particular period of time",
+    "a_1": "It’s the first letter I’ve had in ten days",
+    "a_2": "I haven’t seen him in years",
+    "a_3": "I came after the show began, but I was in time to enjoy the show",
     "exp_b":"AT is used to say when something happens",
     "b_1": "The meeting started at 3 o’clock.",
     "b_2": "We left at 2 o’clock.", 
@@ -261,7 +261,7 @@ export default[{
 },{
   "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549867312658/home/temporal-preposition/2/image073.png",
   "instruction": {
-    "exp_a": "IN is used during the period of time",
+    "exp_a": "IN is used for a particular period of time",
     "a_1": "His father passed away in January",
     "a_2": "The war happened in 18th century",
     "a_3": "People usually get married in the fall",
@@ -361,7 +361,7 @@ export default[{
 },{
   "image": "https://sites.google.com/site/englishprepositiontest/_/rsrc/1549868133879/home/temporal-preposition/2/image096.png",
   "instruction": {
-    "exp_a": "IN is used during the period of time",
+    "exp_a": "IN is used for a particular period of time",
     "a_1": "His father passed away in January",
     "a_2": "The war happened in 18th century",
     "a_3": "People usually get married in the fall",

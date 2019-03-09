@@ -154,7 +154,8 @@ class App extends Component {
       })
       if ((nextQuest + 1) > this.state.SumQuest){
         
-        alert("Pre-training Is Done!")
+        this.setState({ location: 2,value_a: '', value_b: '', isHidden: true, isdisable: false, value: '', nilai:'' });
+
       }
     }
     }
@@ -231,7 +232,22 @@ class App extends Component {
         return(this.render_training())
       case 1:
         return(this.render_quiz())
+      case 2:
+      return(this.render_score())
     }
+  }
+  render_score(){
+    const { classes } = this.props;
+    //get date using momentjs
+    return(
+      <div className={classes.login_main}>
+        <div className={classes.login_paper}>
+          <Typography component="h1" variant="h5">
+            Congratulation, you finish the test!
+          </Typography>
+        </div>
+      </div>
+    )
   }
   render(){
     const { classes } = this.props;

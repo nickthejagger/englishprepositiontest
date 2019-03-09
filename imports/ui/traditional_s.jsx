@@ -27,7 +27,7 @@ import { Meteor } from "meteor/meteor";
 import Soals from './traditional_spatial';
 import Markdown from './markdown.js';
 const ReactMarkdown = require('react-markdown')
-const kunciJawab = ['A', 'B', 'B', 'A', 'A', "B", 'A', 'B', 'A','B', 'B', 'B', 'A', 'B', 'B', 'A', 'A', 'B', 'A', "A"]
+const kunciJawab = ['A', 'B', 'B', 'A', 'B', 'B', 'A', 'B', 'A', 'B', 'B', 'B', 'A', 'B', 'B', 'A', 'A', 'B', 'A', 'A', 'A']
 const styles = theme => ({
   paper: {
     marginBottom: theme.spacing.unit * 4,
